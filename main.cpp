@@ -69,7 +69,7 @@ void sim( int numIterations, bool switchChoice){
 int main(){
   char userChoice;
   int numIterations;
-  cout << "Welcome to the Monty Hall Paradox Paradox Dr. Wang!" << endl;
+  cout << "Welcome to the Monty Hall Paradox Dr. Wang!" << endl;
   cout << "Would you like to stay or switch doors? (s for stay, t for switch) ";
   cin >> userChoice;
 
