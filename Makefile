@@ -5,15 +5,10 @@ CFLAGS = -g -Wall -Wextra
 default: paradox
 
 
-paradox: hall.o main.o
-	$(CC) $(CFLAGS) -o paradox hall.o main.o
+paradox: main.o
+	$(CC) $(CFLAGS) -o paradox main.o
 
-
-hall.o: hall.cpp hall.h
-	$(CC) $(CFLAGS) -c hall.cpp
-
-
-main.o: main.cpp hall.h
+main.o: main.cpp 
 	$(CC) $(CFLAGS) -c main.cpp
 
 
